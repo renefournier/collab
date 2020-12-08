@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "fastify": "^3.0.0",
+    "fastify-websocket": "^2.0.11",
+    "fastify-plugin": "^3.0.0",
+    "fastify-autoload": "^3.0.2",
+    "fastify-cli": "^2.5.1"
+  },
+  "devDependencies": {
+    "tap": "^14.0.0"
+  },
+  "scripts": {
+    "test": "tap test/**/*.test.js",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
